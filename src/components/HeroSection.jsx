@@ -1,0 +1,95 @@
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { ShoppingCart, Star } from "lucide-react";
+import HeroImg1 from "../assets//hero-img/hero-img1.jpeg";
+import HeroImg2 from "../assets//hero-img/hero-img2.jpeg";
+import HeroImg3 from "../assets//hero-img/hero-img3.jpeg";
+import HeroImg4 from "../assets//hero-img/hero-img4.jpeg";
+
+const HeroSection = () => {
+  const images = [HeroImg1, HeroImg2, HeroImg3, HeroImg4];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 3000); // 3s interval
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  return (
+    <section className="relative bg-gradient-to-br from-green-800 via-green-700 to-green-600 text-white overflow-hidden pt-12">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}
+        />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-14">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Content */}
+          <div className="text-center lg:text-left">
+            <div className="flex items-center justify-center flex-col sm:flex-row lg:justify-start space-x-1 mb-4">
+              <div className="flex items-center ">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    className="h-5 w-5 text-yellow-400 fill-current"
+                  />
+                ))}
+              </div>
+              <span className="text-green-200 font-medium">
+                Trusted by 50,000+ customers
+              </span>
+            </div>
+
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Fresh & Natural
+              <span className="block text-yellow-400">Foods</span>
+            </h1>
+
+            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed text-green-100">
+              Discover premium quality spices, fresh produce, and organic
+              ingredients sourced directly from trusted farms across the globe
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Link
+                to="/products"
+                className="inline-flex items-center px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-xl text-lg"
+              >
+                Explore Our Services
+              </Link>
+              {/* <button className="inline-flex items-center px-8 py-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-semibold rounded-xl transition-all duration-200 border border-white/30 text-lg">
+                <Play className="mr-3 h-6 w-6" />
+                Watch Our Story
+              </button> */}
+            </div>
+          </div>
+
+          {/* Hero Image with Fade Transition */}
+          <div className="relative w-full h-[400px] lg:h-[450px] group">
+            {images.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt="Fresh produce"
+                className={`absolute inset-0 w-full transform group-hover:rotate-0 rotate-3 transition-transform duration-500 h-full object-cover rounded-2xl z-30 shadow-2xl ease-in-out ${
+                  index === currentIndex ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            ))}
+            <div className="absolute -top-4 -right-4 w-full h-full bg-yellow-400/20 rounded-2xl"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
