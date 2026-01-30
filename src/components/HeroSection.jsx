@@ -73,7 +73,7 @@ const HeroSection = () => {
           </div>
 
           {/* Hero Image with Fade Transition */}
-          <div className="relative w-full h-[400px] lg:h-[450px] group">
+          <div className="relative w-full h-[400px] lg:h-[460px] group">
             {images.map((img, index) => (
               <img
                 key={index}
