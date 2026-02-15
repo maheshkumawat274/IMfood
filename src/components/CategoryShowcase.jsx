@@ -78,7 +78,7 @@ const CategoryShowcase = () => {
   return (
     <section className=" bg-gray-50 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-start sm:text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Explore Our Premium Categories
           </h2>

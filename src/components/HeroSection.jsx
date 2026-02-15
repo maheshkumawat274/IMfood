@@ -19,7 +19,7 @@ const HeroSection = () => {
   }, [images.length]);
 
   return (
-    <section className="relative bg-gradient-to-br from-green-800 via-green-700 to-green-600 text-white overflow-hidden pt-12">
+    <section className="relative text-gray-50 overflow-hidden py-10 md:py-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div
@@ -43,17 +43,17 @@ const HeroSection = () => {
                   />
                 ))}
               </div>
-              <span className="text-green-200 font-medium">
+              <span className="text-green-700 font-medium">
                 Trusted by 50,000+ customers
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-black">
               Fresh & Natural
               <span className="block text-yellow-400">Foods</span>
             </h1>
 
-            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed text-green-100">
+            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed text-green-700">
               Discover premium quality spices, fresh produce, and organic
               ingredients sourced directly from trusted farms across the globe
             </p>
@@ -73,7 +73,7 @@ const HeroSection = () => {
           </div>
 
           {/* Hero Image with Fade Transition */}
-          <div className="relative w-full h-[400px] lg:h-[450px] group">
+          <div className="relative w-full h-[350px] lg:h-[400px] group">
             {images.map((img, index) => (
               <img
                 key={index}
