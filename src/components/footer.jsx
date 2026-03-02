@@ -14,34 +14,13 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <img src={Logo} alt="Logo" className="w-14" />
-              <span className="text-2xl font-bold">IM FOODS</span>
+              <span className="text-2xl font-bold">IM FOODS INDIA</span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
               Your trusted partner for fresh, natural, and premium quality food
               products sourced from the finest farms worldwide.
             </p>
-            <div className="flex space-x-4">
-              <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors cursor-pointer">
-                <span className="text-sm font-bold">
-                  <Instagram />
-                </span>
-              </div>
-              <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors cursor-pointer">
-                <span className="text-sm font-bold">
-                  <Facebook />
-                </span>
-              </div>
-              <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors cursor-pointer">
-                <span className="text-sm font-bold">
-                  <Twitter />
-                </span>
-              </div>
-              <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors cursor-pointer">
-                <span className="text-sm font-bold">
-                  <Linkedin />
-                </span>
-              </div>
-            </div>
+            
           </div>
 
           {/* Quick Links */}
@@ -170,12 +149,20 @@ const Footer = () => {
               <div>
                 <p className="font-medium text-white mb-1">Email</p>
                 <a
-                  href="mailto:contact@imfoodss.com"
+                  href="mailto:info@imfoodsindia.com"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-green-400 transition-colors"
                 >
-                  contact@imfoodss.com
+                  info@imfoodsindia.com
+                </a><br/>
+                <a
+                  href="mailto:contact@imfoodsindia.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-green-400 transition-colors"
+                >
+                  contact@imfoodsindia.com
                 </a>
               </div>
               <div>
@@ -191,7 +178,7 @@ const Footer = () => {
               </div>
               <div>
                 <p className="font-medium text-white mb-1">Address</p>
-                <p>Delhi</p>
+                <p>Head Office, M 93 Basement M Block, Saket, New Delhi 110017, India</p>
               </div>
             </div>
           </div>
@@ -201,7 +188,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">
-              &copy; 2025 IM Foods. All rights reserved.
+              &copy; 2025 IM Foods India. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a

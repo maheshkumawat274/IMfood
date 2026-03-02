@@ -98,7 +98,7 @@ const Header = () => {
 
             {/* Green Button */}
             <a
-              href="https://imfoodsindia.com/"
+              href="https://imfoodsindia.in/"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-4 inline-flex items-center px-5 py-2 rounded-full 
@@ -156,7 +156,7 @@ const Header = () => {
 
             {/* Mobile Green Button */}
             <a
-              href="https://imfoodsindia.com/"
+              href="https://imfoodsindia.in/"
               target="_blank"
               rel="noopener noreferrer"
               className="block mx-3 mt-3 text-center px-4 py-2 rounded-lg 

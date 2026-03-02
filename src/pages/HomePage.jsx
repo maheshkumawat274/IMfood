@@ -24,7 +24,7 @@ const HomePage = () => {
           name="keywords"
           content="IMFoods, food export India, Indian food exporters, organic food export, spices export, fruits export, vegetables export, pulses export, rice export, grains export, tea exporter, coffee exporter, edible oils exporter"
         />
-        <link rel="canonical" href="https://imfoodss.com/" />
+        <link rel="canonical" href="https://imfoodsindia.com/" />
 
         {/* Open Graph Tags */}
         <meta
@@ -37,9 +37,9 @@ const HomePage = () => {
         />
         <meta
           property="og:image"
-          content="https://imfoodss.com/images/og-image.jpg"
+          content="https://imfoodsindia.com/images/og-image.jpg"
         />
-        <meta property="og:url" content="https://imfoodss.com/" />
+        <meta property="og:url" content="https://imfoodsindia.com/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card */}
@@ -54,7 +54,7 @@ const HomePage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://imfoodss.com/images/og-image.jpg"
+          content="https://imfoodsindia.com/images/og-image.jpg"
         />
       </Helmet>
 

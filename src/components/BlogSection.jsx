@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { CircleChevronRight } from "lucide-react";
 import axios from "axios";
 import { toast } from "react-hot-toast";
-const API_URL = "https://api.imfoodss.com";
+const API_URL = "https://api.imfoodsindia.com";
 
 const BlogSection = () => {
   const [blogs, setBlogs] = useState([]);

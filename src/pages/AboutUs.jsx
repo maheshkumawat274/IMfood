@@ -28,7 +28,7 @@ const AboutUs = () => {
     },
   ];
 
-  const pageUrl = "https://imfoodss.com/about";
+  const pageUrl = "https://imfoodsindia.com/about";
 
   return (
     <div className="min-h-screen ">
